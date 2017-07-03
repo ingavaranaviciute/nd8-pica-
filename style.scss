@@ -1,49 +1,66 @@
+
 html, body, #container {
   height: 100%;
-  font-family: "Amatic SC", sans-serif; }
+  font-family: "Amatic SC", sans-serif;
+}
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   height: 100%;
-  margin: 0; }
+  margin: 0;
+}
 
 .button {
-  font-family: "Amatic SC", sans-serif; }
+  font-family: "Amatic SC", sans-serif;
+}
 
 [class*="col-"] {
-  width: 100%; }
+  width: 100%;
+}
 
 @media (min-width: 768px) {
   .col-sm-12 {
-    width: 100%; }
-
+    width: 100%;
+  }
   .col-sm-6 {
-    width: 50%; }
-
+    width: 50%
+  }
   .col-sm-3 {
-    width: 25%; } }
+    width: 25%;
+  }
+
+}
+
 @media (min-width: 992px) {
   .col-md-12 {
-    width: 100%; }
-
+    width: 100%;
+  }
   .col-md-6 {
-    width: 50%; }
-
+    width: 50%
+  }
   .col-md-3 {
-    width: 25%; } }
+    width: 25%;
+  }
+}
+
 @media (min-width: 1200px) {
   .col-lg-12 {
-    width: 100%; }
-
+    width: 100%;
+  }
   .col-lg-6 {
-    width: 50%; }
-
+    width: 50%
+  }
   .col-lg-3 {
-    width: 25%; } }
+    width: 25%;
+  }
+}
+
 #container {
-  width: 100%; }
+  width: 100%;
+}
 
 #first_div {
   background-image: url("img/pizza.jpg");
@@ -53,26 +70,33 @@ body {
   filter: grayscale(50%);
   display: flex;
   align-items: center;
-  text-align: center; }
-  #first_div #inner_div {
+  text-align: center;
+
+  #inner_div {
     width: 100%;
     padding-right: 20px;
     padding-left: 20px;
     overflow: hidden;
+
     margin-right: auto;
-    margin-left: auto; }
-    #first_div #inner_div h1 {
+    margin-left: auto;
+    h1 {
       color: white;
       font-size: 60px;
       font-weight: bold;
       line-height: 1.5;
-      margin-top: 0; }
-    #first_div #inner_div a {
+      margin-top: 0;
+    }
+
+    a {
       background-color: black;
       color: white;
       font-size: 36px;
       display: inline-block;
       border: none;
-      text-decoration: none; }
+      text-decoration: none;
 
-/*# sourceMappingURL=style.css.map */
+
+    }
+  }
+}
