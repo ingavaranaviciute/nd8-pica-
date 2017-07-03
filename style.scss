@@ -63,6 +63,7 @@ body {
 }
 
 #first_div {
+  position: relative;
   background-image: url("img/pizza.jpg");
   background-size: cover;
   width: 100%;
@@ -95,8 +96,27 @@ body {
       display: inline-block;
       border: none;
       text-decoration: none;
+      padding: 8px 16px;
+
+      &:hover {
+        color: black;
+        background-color: #ccc;
+      }
 
 
+    }
+  }
+  .openTime{
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    background-color: black;
+    padding: 8px 16px;
+    display: inline-block;
+
+    span{
+    font-size: 24px;
+      color: #fff;
     }
   }
 }
