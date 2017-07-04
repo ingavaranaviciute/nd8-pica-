@@ -292,5 +292,83 @@ display: block;
   margin-left: 20px;
 }
 
+#contact{
+  max-width: 980px;
+  margin: auto;
+  background-color: #607d8b;
+  padding: 64px 16px;
+  filter: grayscale(50%);
 
+  div{
+
+  p{
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+.reserve{
+  color: #fff;
+  font-size: 36px;
+  line-height: 1.5;
+}
+  .fyi{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    font-size: 24px;
+  }
+    form{
+      input{
+        width: 288px;
+        padding: 23px 8px;
+        margin-bottom: 23px;
+        border-style: none;
+        font-family: "Amatic SC", sans-serif;
+        font-size: 27px;
+
+      }
+      button{
+        color: #000;
+        font-size: 30px;
+        background-color: white;
+        padding: 10px 8px;
+        width: 288px;
+        font-family: "Amatic SC", sans-serif;
+        border-style: none;
+      }
+    }
+  }
+}
+
+$placeholderColor: #ccc;
+
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 27px;
+}
+
+
+::-moz-placeholder { /* Firefox 19+ */
+ color: $placeholderColor;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 27px;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+color: $placeholderColor;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 27px;
+}
+
+::-moz-placeholder { /* Firefox 18- */
+  color: $placeholderColor;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 27px;
+}
 
