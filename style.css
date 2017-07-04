@@ -90,18 +90,19 @@ body {
       font-size: 24px;
       color: #fff; }
 
+h1 {
+  color: white;
+  font-size: 64px;
+  margin-top: 0;
+  margin-bottom: 64px;
+  text-align: center;
+  font-weight: 100; }
+
 #meniu {
   width: 100%;
   min-height: 90%;
   background-color: black;
   padding: 70px 15px; }
-  #meniu h1 {
-    color: white;
-    font-size: 64px;
-    margin-top: 0;
-    margin-bottom: 64px;
-    text-align: center;
-    font-weight: 100; }
   #meniu ul {
     list-style-type: none;
     margin: 0;
@@ -123,9 +124,7 @@ body {
   #meniu .foodList {
     border: 1px solid darkgrey;
     max-width: 980px;
-    margin: auto;
-    margin-top: 32px;
-    margin-bottom: 32px; }
+    margin: 32px auto; }
     #meniu .foodList hr {
       border: 0;
       border-top: 1px solid #eee;
@@ -177,5 +176,44 @@ body {
       display: block;
       margin-top: 32px;
       margin-bottom: 32px; }
+
+#about {
+  overflow: hidden;
+  background-color: #8b5f5b;
+  padding: 64px 16px; }
+  #about .info p {
+    font-size: 24px;
+    color: white;
+    line-height: 1.5; }
+  #about .info img {
+    width: 150px;
+    float: right;
+    border-radius: 50%; }
+  #about .info .open {
+    width: 100%;
+    margin: 16px 0;
+    border-style: none;
+    border-radius: 0; }
+  #about h3 {
+    color: white;
+    font-size: 36px;
+    line-height: 1.5;
+    display: inline-block;
+    margin: 10px 0; }
+  #about #opening_hours {
+    overflow: hidden;
+    margin: 24px 0; }
+    #about #opening_hours .days {
+      display: block; }
+      #about #opening_hours .days .daysleft, #about #opening_hours .days .daysright {
+        float: left;
+        display: inline-block; }
+        #about #opening_hours .days .daysleft p, #about #opening_hours .days .daysright p {
+          color: #fff;
+          font-size: 25px;
+          line-height: 1.5; }
+
+.daysright {
+  margin-left: 20px; }
 
 /*# sourceMappingURL=style.css.map */

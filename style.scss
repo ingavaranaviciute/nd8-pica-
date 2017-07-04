@@ -121,20 +121,22 @@ body {
   }
 }
 
+h1{
+  color: white;
+  font-size: 64px;
+  margin-top: 0;
+  margin-bottom: 64px;
+  text-align: center;
+  font-weight: 100;
+}
+
 #meniu{
   width: 100%;
   min-height: 90%;
   background-color: black;
   padding: 70px 15px;
 
-  h1{
-    color: white;
-    font-size: 64px;
-    margin-top: 0;
-    margin-bottom: 64px;
-    text-align: center;
-    font-weight: 100;
-  }
+
   ul {
     list-style-type: none;
     margin: 0;
@@ -163,9 +165,7 @@ body {
   .foodList{
     border: 1px solid darkgrey;
     max-width: 980px;
-    margin: auto;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin: 32px auto;
 
     hr{
       border: 0;
@@ -181,7 +181,7 @@ body {
     text-align: center;
 
   }
-  .pizzaList{
+  .pizzaList {
     overflow: hidden;
     background-color: white;
     padding: 32px 16px;
@@ -234,6 +234,63 @@ body {
     }
   }
   }
+
+#about{
+  overflow: hidden;
+  background-color: #8b5f5b;
+  padding: 64px 16px;
+  .info{
+
+    p{
+      font-size: 24px;
+      color:white;
+      line-height: 1.5;
+    }
+    img{
+      width: 150px;
+      float: right;
+      border-radius: 50%;
+    }
+    .open{
+      width: 100%;
+      margin: 16px 0;
+      border-style: none;
+      border-radius: 0;
+    }
+
+  }
+  h3{
+    color: white;
+    font-size: 36px;
+    line-height: 1.5;
+    display: inline-block;
+    margin: 10px 0;
+  }
+  #opening_hours {
+    overflow: hidden;
+    margin: 24px 0;
+
+.days {
+display: block;
+
+
+    .daysleft, .daysright {
+      float: left;
+      display: inline-block;
+      p {
+        color: #fff;
+        font-size: 25px;
+        line-height: 1.5;
+      }
+
+    }
+    }
+  }
+}
+
+.daysright {
+  margin-left: 20px;
+}
 
 
 
