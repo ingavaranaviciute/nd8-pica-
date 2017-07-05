@@ -12,6 +12,47 @@ body {
 .button {
   font-family: "Amatic SC", sans-serif; }
 
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
 [class*="col-"] {
   width: 100%; }
 
@@ -42,10 +83,36 @@ body {
 
   .col-lg-3 {
     width: 25%; } }
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none; } }
+.topnav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  background-color: black;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  opacity: .6; }
+  .topnav:hover {
+    opacity: 1; }
+  .topnav a {
+    float: left;
+    text-decoration: none;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    font-size: 24px; }
+    .topnav a:hover, .topnav a:active {
+      background-color: #cccccc;
+      color: black; }
+
 #container {
   width: 100%; }
 
-#first_div {
+#home {
   position: relative;
   background-image: url("img/pizza.jpg");
   background-size: cover;
@@ -55,20 +122,24 @@ body {
   display: flex;
   align-items: center;
   text-align: center; }
-  #first_div #inner_div {
+  #home .inner_div {
     width: 100%;
     padding-right: 20px;
     padding-left: 20px;
     overflow: hidden;
     margin-right: auto;
     margin-left: auto; }
-    #first_div #inner_div h1 {
+    #home .inner_div h1 {
       color: white;
       font-size: 60px;
       font-weight: bold;
       line-height: 1.5;
       margin-top: 0; }
-    #first_div #inner_div a {
+      @media (min-width: 768px) {
+        #home .inner_div h1 {
+          font-size: 100px;
+          font-weight: 100; } }
+    #home .inner_div a {
       background-color: black;
       color: white;
       font-size: 36px;
@@ -76,17 +147,17 @@ body {
       border: none;
       text-decoration: none;
       padding: 8px 16px; }
-      #first_div #inner_div a:hover {
+      #home .inner_div a:hover {
         color: black;
         background-color: #ccc; }
-  #first_div .openTime {
+  #home .openTime {
     position: absolute;
     bottom: 10px;
     left: 15px;
     background-color: black;
     padding: 8px 16px;
     display: inline-block; }
-    #first_div .openTime span {
+    #home .openTime span {
       font-size: 24px;
       color: #fff; }
 
@@ -111,7 +182,8 @@ h1 {
     background-color: black;
     border: 1px solid grey; }
     #meniu ul li {
-      float: left; }
+      float: left;
+      width: 33.333%; }
     #meniu ul a {
       display: block;
       color: white;
@@ -158,7 +230,11 @@ h1 {
       color: white;
       padding-left: 5px;
       padding-right: 5px;
-      font-weight: 100; }
+      font-weight: 100;
+      margin-left: 10px; }
+      @media (min-width: 768px) {
+        #meniu .pizzaList .red {
+          float: left; } }
     #meniu .pizzaList .gray {
       background-color: #bbb;
       float: right;
@@ -168,7 +244,11 @@ h1 {
       padding-left: 5px;
       padding-right: 5px;
       font-weight: 100;
-      margin-right: 50px; }
+      margin-right: 50px;
+      margin-left: 10px; }
+      @media (min-width: 768px) {
+        #meniu .pizzaList .gray {
+          float: left; } }
     #meniu .pizzaList p {
       color: #757575;
       font-size: 36px;
@@ -206,16 +286,14 @@ h1 {
     margin: 24px 0; }
     #about #opening_hours .days {
       display: block; }
-      #about #opening_hours .days .daysleft, #about #opening_hours .days .daysright {
+      #about #opening_hours .days .day_group {
         float: left;
-        display: inline-block; }
-        #about #opening_hours .days .daysleft p, #about #opening_hours .days .daysright p {
+        display: inline-block;
+        width: 50%; }
+        #about #opening_hours .days .day_group p {
           color: #fff;
           font-size: 25px;
           line-height: 1.5; }
-
-.daysright {
-  margin-left: 20px; }
 
 #contact {
   width: 100%;
